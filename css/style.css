@@ -6,8 +6,109 @@ header,section,div,footer,ul,li,a,ol,dl,dd,dt{
 :root{
     --purple:#4D2C5E;
     --Primary-Black:#050C26;
+    --black:#1D1D1D;
     --orange: #FF7426;
     --white:#FFF;
     --pink:#FDF8EE;
     --grey:#8A8A8A;
+    --overley:rgba(26, 26, 26, 0.54);
+}
+
+/* header */
+.header{
+    background: var(--pink);
+    padding: 50px 0;
+}
+
+.header .list-gap{
+    gap: 45px;
+}
+
+.header .nav-gap{
+    gap: 60px;
+}
+
+.header .nav-list a{
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header .nav-list a:hover{
+    color: var(--purple);
+}
+
+.nav-bar .main-link{
+    /* padding: 18px 57px; */
+    width: 191px;
+    height: 65px;
+    border-radius: 218px;
+    background: var(--purple);
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 500;
+    transition: all linear 0.3s;
+}
+
+.nav-bar .main-link:hover{
+    transform: scale(1.1);
+    color: var(--purple);
+    background-color: var(--pink);
+    border:1px solid var(--purple)
+}
+
+header .top-header .dropdown-content .nav-bar ul{
+    width: 80px;
+}
+
+header .dropdown-content{
+    position: fixed;
+    background-color: var(--white);
+    top: 0;
+    right: -100%;
+    width: 70%;
+    z-index: 6;
+    height: 100vh;
+    padding: 50px;
+}
+
+header #check:checked ~ .dropdown-content{
+    right:0;
+}
+
+header #check{
+    appearance: none;
+}
+
+header #check:checked ~ .dropdown-content .close-menu{
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+header .dropdown-content .log-link{
+    padding: 0;
+}
+
+header #check:checked ~ .overley{
+    background-color: var(--overley);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+header .menu-address{
+    border-top: 1px solid var(--border-back);
+    padding-top: 24px;
+}
+
+header .menu-address :where(address, div a){
+    color: var(--Text-Colour-2);
+    font-size: 13.3px;
+    font-weight: 400;
+    line-height: 22px;
 }
