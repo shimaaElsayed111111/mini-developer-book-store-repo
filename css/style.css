@@ -38,7 +38,7 @@ header,section,div,footer,ul,li,a,ol,dl,dd,dt{
     color: var(--purple);
 }
 
-.nav-bar .main-link{
+.main-link{
     /* padding: 18px 57px; */
     width: 191px;
     height: 65px;
@@ -50,7 +50,7 @@ header,section,div,footer,ul,li,a,ol,dl,dd,dt{
     transition: all linear 0.3s;
 }
 
-.nav-bar .main-link:hover{
+.main-link:hover{
     transform: scale(1.1);
     color: var(--purple);
     background-color: var(--pink);
@@ -114,6 +114,59 @@ header .menu-address :where(address, div a){
 }
 
 /* shimaa hero section */
+.hero-section{
+    padding: 80px;
+    background-color: var(--pink);
+    height: 100vh;
+}
+
+.hero-section h1{
+    color: var(--Primary-Black);
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 135%;
+    max-width: 586px;
+}
+
+.hero-section p{
+    max-width: 586px;
+    color: #8A8A8A;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 171%;
+}
+
+.hero-section h1 span{
+    color: var(--orange);
+}
+
+.hero-section form{
+    margin-top: 50px;
+    background: var(--white);
+    padding: 5px 20px;
+    max-width: 568px;
+    min-height: 79px;
+    border-radius: 96px;
+}
+
+.hero-section .form-gap{
+    gap: 12px;
+}
+
+.hero-section input{
+    border: none;
+}
+
+.hero-section #search{
+    color: var(--Primary-Black);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.hero-section .img-item img{
+    display: block;
+    width: 100%;
+}
 
 /*  shimaa info section  */
     
