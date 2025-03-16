@@ -1,0 +1,689 @@
+h1,h2,h3,h4,h5,h6,p,span,input,button,form,
+header,section,div,footer,ul,li,a,ol,dl,dd,dt{
+    font-family: "Roboto", sans-serif;
+}
+
+:root{
+    --purple:#4D2C5E;
+    --Primary-Black:#050C26;
+    --orange: #FF7426;
+    --white:#FFF;
+    --pink:#FDF8EE;
+    --grey:#8A8A8A;
+}
+
+/* esraa header  */
+header {
+    background: #FFF;
+    padding: 50px 0px;
+}
+
+header .row {
+    justify-content: space-between;
+}
+header .container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header .col-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+header .col-nav ul a{
+    color: #4F5665;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-content: center;
+}
+.logo-main{
+    color: #0B132A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 45px;
+}
+.logo-sub{
+    color: #0B132A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.col-auto-buton {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.col-auto-buton a {
+    font-size: 16px;
+    font-weight: 500;
+}
+.col-auto-buton{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.col-auto-buton .signup {
+    border: 1px solid #F53855;
+    border-radius: 50px;
+    color: #F53855;
+    font-size: 16px;
+    font-weight: 500;
+    width:150px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.col-auto-buton .Signin{
+    color: #0B132A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.col-auto-buton .signup:hover {
+    background: #ff5722;
+    color: white;
+}
+
+/* esraa hero section */
+.hero-section{
+    background: var(--White, #FFF);
+    /* min-height:100vh;  */
+    padding: 20px 0px;
+}
+.hero-section h1{
+    max-width: 555px;
+}
+.hero-section h1 .normal-text{
+    color: #0B132A;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 70px;
+}
+.hero-section h1 .bold-text{
+    color: #0B132A;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+}
+.hero-section p {
+    margin-top: 20px;
+    max-width: 555px;
+}
+.hero-section p .small-text{
+    color: #4F5665;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.hero-section p .strong-text{
+    color: #4F5665;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.hero-section .btn{
+    width: 250px;
+    height: 60px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background: var(--stroke);
+    border: 1px solid var(--stroke);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    margin-top: 50px;
+    padding: 17px;
+    transition: all linear 0.3s;
+}
+
+.hero-section .btn:hover{
+    color: var(--stroke);
+    background-color: var(--white);
+    transform: scale(1.1);
+}
+
+.hero-section .img-item{
+    position: relative;
+    max-width:100%;
+
+}
+.hero-section .img-item img{
+    width: 100%;
+    display: block;
+}
+@media  (max-width:920px){
+    .sm-justify-content-center{
+        justify-content: center;
+    }
+    .sm-diriction-column{
+        flex-direction: column;
+    
+    }
+    .sm-gap{
+        gap:40px;
+    } 
+    .d-sm-none{
+        display: none;
+    }
+}
+@media (min-width:920px){
+    .d-md-none{
+        display: none;
+    }
+}
+
+/* menaa analytics section */
+.menna{
+    padding-top: 104px;
+    padding-right:150px;
+    padding-left: 150px;
+}
+
+.analytics{
+    background: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    /* border: 1px solid var(--light-grey); */
+    max-width:1300px;
+    min-height: 200px;
+    box-shadow: 5px 5px 20px var(--light-grey);
+    transition: all linear 0.3s;
+    
+} 
+
+.analytics:hover{
+    transform: translateY(20px);
+    box-shadow: 5px 5px 20px var(--stroke);
+}
+
+@media (max-width: 920px) {
+    .d-sm-none{
+        display: none;
+    }
+
+    .sm-justify-content-center{
+        justify-content: center;
+    }
+
+    .sm-align-items-center{
+        align-items: center;
+    }
+
+
+    .sm-social-gap{
+        gap: 40px;
+    }
+
+    .sm-direction-column{
+        flex-direction: column;
+    }
+}  
+    
+.menna .icon{
+    width: 55px;
+    height: 55px;
+    border-radius: 70px;
+    background:var(--pink);
+}
+
+.menna .i-icon{
+    width: 24px;
+    height: 24px;
+    margin: 15px;
+
+}
+
+
+.menna span{
+    color: var(--black);
+    font-size: 25px;   
+    font-weight: 700;
+    line-height: 30px; 
+}
+
+.menna p{
+    color:var(--grey);
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.menna .analytics li{
+    display: flex;
+    gap: 36px;
+    min-height: 125px;
+    padding: 0 130px;
+    align-items: center;
+}
+
+.menna .right-border{
+    border-right:2px solid  #EEEFF2 ;
+}
+
+/* menaa features section */
+.features{
+    padding: 90px 0;
+}
+
+.features h2{
+    color: #0B132A;   
+    font-size: 35px;
+    
+    font-weight: 500;
+    line-height: 50px; 
+}
+
+.features .row{
+    justify-content: space-between;
+
+}
+
+.features.top-p{
+    color:var(--grey);
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px; 
+}
+
+.under-p{
+    color:var(--grey);    
+    font-size: 14px;
+    padding-bottom: 15px;
+    font-weight: 400;
+    line-height: 30px; 
+}
+
+.features .item-img img{
+    
+    display:block ;
+    width: 100%;
+}
+
+.features .list-info li{
+    display: flex;
+    gap: 3px;
+}
+
+.features .item-content{
+    padding-top:50px ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* shrouk plan section */
+.plan-section{
+    padding: 80px 0;
+    background: linear-gradient(#F8F8F8, var(--white));
+}
+
+.plan-section .item{
+    border-radius: 10px;
+    border: 2px solid #DDD;
+    background: var(--white);
+    padding: 50px 0;
+    margin-top: 60px;
+    transition: all linear 0.3s;
+}
+
+.plan-section .item:hover{
+    transform: scale(1.1);
+    box-shadow: 3px 3px 5px #DDD;
+    border: 2px solid var(--stroke);
+}
+
+.plan-section h3,
+.plan-section span{
+    color: var(--black);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.plan-section span{
+    font-size: 25px;
+}
+
+.margin-plan1{
+    margin-top: 130px;
+}
+
+.plan-section .img-item img{
+    display: block;
+    width: 100%;
+}
+
+.plan-section .plan-list li{
+    color: var(--grey);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px; 
+}
+
+.plan-gap{
+    gap: 10px;
+}
+
+.plan-section .btn{
+    color: var(--stroke);
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 50px;
+    border: 2px solid #F53838;
+    width: 177.876px;
+    height: 45px;
+    transition: all linear 0.3s;
+}
+
+.plan-section .btn:hover{
+    color: var(--white);
+    background-color: var(--stroke);
+    transform: scale(1.1);
+    box-shadow: 3px 3px 5px #DDD;
+}
+
+.margin-plan2{
+    margin-top: 90px;
+}
+
+.plan-section .span2{
+    color: var(--grey);
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.margin-plan3{
+    margin-top: 50px;
+}
+
+/* shrouk vpn section  */
+.vpn-section{
+    padding-top: 100px;
+}
+
+.vpn-section .map{
+    margin-top: 50px;
+}
+
+.vpn-section .map img{
+    display: block;
+    width: 100%;
+}
+
+/* shimaa logos section */
+.logos-section{
+    padding: 80px 0;
+}
+
+.sponser-list li a img{
+    width: 200px;
+    height: 150px;
+}
+
+/* shimaa customer section  */
+.customer-section-section{
+    position: relative;
+}
+
+.customer-section .item{
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #DDD;
+    transition: all linear 0.3s;
+}
+
+.customer-section .item:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+    border: 2px solid var(--darkpink);
+    background: var(--white);
+}
+
+.customer-section h3{
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.customer-section .p1{
+    color: var(--grey);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.customer-section span{
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.customer-section .p2{
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 340px;
+}
+
+.spon-gap{
+    gap:20px;
+}
+
+.star-gap{
+    gap:10px;
+}
+
+.logo-item{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    max-width: 500px;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+.logo-item h2,
+.plan-section h2,
+.vpn-section h2{
+    max-width: 444px;
+    text-align: center;
+    color: var(--black);
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.logo-item p,
+.plan-section p,
+.vpn-section p{
+    text-align: center;
+    color:var(--grey);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 555px;
+}
+
+.img-item img{
+    display: block;
+    width: 100%;
+}
+
+/* .slider{
+    position: relative;
+    left: 100px;
+} */
+.pagination{
+    margin-top: 40px;
+}
+
+.pagination li button{
+    width: 15px;
+    height: 15px;
+    background-color: var(--grey);
+    /* margin:24px 12px; */
+    border-radius: 50%;
+    transition: all linear 0.3s;
+}
+
+.pagination li button:hover{
+    background-color: var(--darkpink);
+    transform: scale(1.1);
+}
+
+.pag2 .btn1,
+.pag2 .btn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--white);
+    stroke-width: 1px;
+    stroke: var(--stroke);
+    border: 1px solid var(--darkpink);
+}
+
+.pag2 .btn1:hover{
+    background-color: transparent;
+}
+
+.pag2 .btn2{
+    background-color: var(--stroke);
+}
+
+/* shimaa subscribe section */
+.subscribe-section{
+    margin: 80px 0;
+    position: relative;
+    top: 180px;
+}
+
+.subscribe-section .row{
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 5px 5px 20px var(--light-grey);
+    padding:50px 70px;
+    transition: all linear 0.3s;
+    margin: 12px 0;
+}
+
+.subscribe-section .row:hover{
+    transform: translateY(20px);
+    box-shadow: 5px 5px 20px var(--stroke);
+}
+
+.subscribe-section h2{
+    max-width: 444px;
+    color: var(--black);
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.subscribe-section p{
+    color:var(--grey);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.subscribe-section button{
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    border-radius: 10px;
+    background: var(--stroke);
+    width: 250px;
+    height: 60px;
+    transition: all linear 0.3s;
+    box-shadow: 5px 3px 5px var(--grey);
+}
+
+.subscribe-section button:hover{
+    transform: scale(1.1);
+}
+
+/* esraa footer */
+footer{
+    background: #F8F8F8;
+    padding: 180px 0px 140px 0px;
+}
+    
+.justify-content-sace-between{
+    justify-content: space-between;
+}
+footer .social{
+    display: flex;
+    margin-top: 10px;
+}
+
+.p-footer{
+    width: 340px;
+}
+
+.normal-text-footer{
+    color: #4F5665;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+.bold-text-footer{
+    color: #4F5665;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+}
+footer .foot-links h3{
+    color: #0B132A;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.footer-p .small-text-footer{
+    color: #AFB5C0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.footer-p .strong-text-footer{
+    color: #AFB5C0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+} 
+footer .foot-links li a{
+    color: #4F5665;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
