@@ -12,6 +12,7 @@ header,section,div,footer,ul,li,a,ol,dl,dd,dt{
     --pink:#FDF8EE;
     --grey:#8A8A8A;
     --overley:rgba(26, 26, 26, 0.54);
+    --primary-pink:rgba(255, 255, 255, 0.20);
 }
 
 /* shimaa header */
@@ -172,6 +173,46 @@ header .menu-address :where(address, div a){
 }
 
 /*  shimaa info section  */
+.info-section .container{
+    max-width: 1350px;
+    border-radius: 14px;
+    background: var(--purple);
+    transition: all linear 0.3s;
+    position: relative;
+    bottom: 100px;
+    padding:30px 10px;
+}
+
+.info-section .container:hover{
+    transform: translateY(20px);
+    box-shadow: 3px 3px 20px var(--grey);
+}
+
+.info-section .img-item{
+    border-radius: 23px;
+    background: var(--primary-pink);
+    width: 100px;
+    height: 100px;
+}
+
+.info-section h3{
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.info-section p{
+    max-width: 292px;
+    color: var(--primary-pink);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-top: 10px;
+}
+
+.info-section .info-gap{
+    gap: 25px;
+}
     
 /* shrouk tracks section  */
 

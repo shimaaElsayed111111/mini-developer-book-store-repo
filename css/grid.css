@@ -365,7 +365,7 @@ button{
     flex-wrap: wrap;
 }
 
-.flex-direction{
+.c{
     flex-direction: column;
 }
 
@@ -399,5 +399,10 @@ button{
 @media (min-width: 920px){
     .d-md-none{
         display: none;
+    }
+
+    .d-position-bottom{
+        position:relative;
+        bottom:100px;
     }
 }
