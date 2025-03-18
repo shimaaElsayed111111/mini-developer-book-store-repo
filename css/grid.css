@@ -28,7 +28,7 @@ button{
     flex-wrap: wrap;
     margin-left: -12px;
     margin-right: -12px;
-    padding: 12px;
+    padding:0 12px;
     row-gap: 24px;
 }
 
@@ -352,6 +352,10 @@ button{
     justify-content: space-between;
 }
 
+.justify-content-end{
+    justify-content: flex-end;
+}
+
 .justify-content-center {
     justify-content: center;
 }
@@ -365,7 +369,7 @@ button{
     flex-wrap: wrap;
 }
 
-.c{
+.flex-direction{
     flex-direction: column;
 }
 

@@ -6,13 +6,14 @@ header,section,div,footer,ul,li,a,ol,dl,dd,dt{
 :root{
     --purple:#4D2C5E;
     --Primary-Black:#050C26;
-    --black:#1D1D1D;
+    --second-black:#1D1D1D;
     --orange: #FF7426;
     --white:#FFF;
     --pink:#FDF8EE;
     --grey:#8A8A8A;
     --overley:rgba(26, 26, 26, 0.54);
     --primary-pink:rgba(255, 255, 255, 0.20);
+    --black:#000;
 }
 
 /* shimaa header */
@@ -30,7 +31,7 @@ header,section,div,footer,ul,li,a,ol,dl,dd,dt{
 }
 
 .header .nav-list a{
-    color: var(--black);
+    color: var(--second-black);
     font-size: 18px;
     font-weight: 600;
 }
@@ -41,7 +42,7 @@ header,section,div,footer,ul,li,a,ol,dl,dd,dt{
 
 .main-link{
     padding: 18px 50px;
-    /* width: 191px;
+        /* width: 191px;
     height: 65px; */
     border-radius: 218px;
     background: var(--purple);
@@ -58,8 +59,8 @@ header,section,div,footer,ul,li,a,ol,dl,dd,dt{
     border:1px solid var(--purple)
 }
 
-header .top-header .dropdown-content .nav-bar ul{
-    width: 80px;
+header .dropdown-content .nav-bar ul{
+    width: 150px;
 }
 
 header .dropdown-content{
@@ -102,10 +103,10 @@ header #check:checked ~ .overley{
     z-index: 5;
 }
 
-header .menu-address{
+/* header .menu-address{
     border-top: 1px solid var(--border-back);
     padding-top: 24px;
-}
+} */
 
 header .menu-address :where(address, div a){
     color: var(--Text-Colour-2);
@@ -114,10 +115,14 @@ header .menu-address :where(address, div a){
     line-height: 22px;
 }
 
+
 /* shimaa hero section */
 .hero-section{
-    padding: 80px;
+    padding: 150px 0 700px ;
     background-color: var(--pink);
+    background-image: url(../img/hero-back.png);
+    background-repeat: no-repeat;
+    background-position: 1080px 40px;
     height: 100vh;
 }
 
@@ -174,7 +179,7 @@ header .menu-address :where(address, div a){
 
 /*  shimaa info section  */
 .info-section .container{
-    max-width: 1350px;
+    max-width: 1300px;
     border-radius: 14px;
     background: var(--purple);
     transition: all linear 0.3s;
@@ -191,8 +196,8 @@ header .menu-address :where(address, div a){
 .info-section .img-item{
     border-radius: 23px;
     background: var(--primary-pink);
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 .info-section h3{
@@ -215,6 +220,49 @@ header .menu-address :where(address, div a){
 }
     
 /* shrouk tracks section  */
+.tracks-section{
+    background-image:url(../img/idea.png), url(../img/arr.png);
+    background-repeat: no-repeat;
+    background-position: top  left ,top right;
+}
+
+.tracks-section .gap-track{
+    gap:9px;
+}
+
+.tracks-section .item-content h2{
+    color:var(--black) ;
+    font-family: "Jost", sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: capitalize;
+}
+
+.tracks-section .item-content p{
+    color: var(--grey);
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 65px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.tracks-section .item{
+    border-radius: 14px;
+    background: var(--white);
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.10);
+    padding: 13px;
+}
+
+.tracks-section .img-item img{
+    display: block;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.tracks-section .cont-gap{
+    gap: 3px;
+}
 
 /*  shrouk premium section  */
 
